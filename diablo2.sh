@@ -2,7 +2,6 @@
 
 # Diablo v2.0 Bash SSH bruteforce login hacker 
 # This is free software: you are free to change it and redistribute it.
-# If running this script in X, type 'unset DISPLAY' in terminal to avoid SSH authentication popup box.
 # Please install sshpass before running this script. It is required by this script.
 # Please do not abuse this tool. Use it on your own network or on networks you have permission to test.
 # Usage: ./diablo2.sh 127.0.0.1
